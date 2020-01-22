@@ -1,9 +1,5 @@
 node_modules/**/*
 .expo/*
-App.js
-app.json
-babel.config.js
-yarn.lock
 npm-debug.*
 *.jks
 *.p8
@@ -13,6 +9,11 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
+App
+app
+babel
+yarn
+
 
 # macOS
 .DS_Store
