@@ -9,10 +9,6 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
-App
-app
-babel
-yarn
 
 
 # macOS
