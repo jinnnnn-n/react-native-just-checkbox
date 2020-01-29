@@ -21,7 +21,7 @@ $ expo start # or yarn start
 |isChecked|initial state of the checkbox, DEFAULT: false | bool|
 |checkBoxSize|size of the checkbox, DEFAULT: 30|number|
 |checkColor|color of the checkbox, follows ['React Native Named  colors'](https://facebook.github.io/react-native/docs/colors#named-colors "react-native"),   DEFAULT: 'navy' |string|
-|squareCheckBox| By default, we provide a circle-checkbox. By settting this props to true change the shape of the checkbox to square. No props are needed for the circle-checkbox.  |true|
+|squareCheckBox| By default, we provide a circle-checkbox. By settting this props to true change the shape of the checkbox to square. No props are needed for the circle-checkbox.  |bool|
 |onToggle|function which is invoked when the checkbox is clicked|function|
 
 ### 
