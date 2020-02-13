@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import CheckBox from './CheckBox'
+import CheckBox from 'react-native-just-checkbox'
 
 export default function App() {
   return (
