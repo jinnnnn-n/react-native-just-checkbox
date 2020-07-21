@@ -3591,7 +3591,7 @@ minimist@^1.1.1:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
 
-minimist@^1.2.2:
+minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -4163,10 +4163,10 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-native-just-checkbox@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/react-native-just-checkbox/-/react-native-just-checkbox-1.0.11.tgz#1b5bbdcef331c8d09212ee9a7e15c19db5411fd5"
-  integrity sha512-8rhrPc5sLXLLiWN3/zdYHF/pVLL8rcvPopem9TpUqEY53zJRs8zoV97/v66Kcrt9c34+odb37AgnV2V2ruKYSQ==
+react-native-just-checkbox@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/react-native-just-checkbox/-/react-native-just-checkbox-1.0.12.tgz#726b9c4970254f6e042298f328c87ddcf566c206"
+  integrity sha512-p8DCCv/sxUTAqDAPdfDqZPFj//4l4MR9vG/AfqjMRCeQg2wHNIq/Do1qu9bzqm7SlpSHeLd0q7kYsdjEcdCUfQ==
 
 react-native-view-shot@3.0.2:
   version "3.0.2"
