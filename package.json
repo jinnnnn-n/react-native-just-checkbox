@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "~36.0.0",
+    "expo": "~49.0.6",
     "logkitty": "^0.7.1",
     "mem": "^6.1.0",
     "react": "~16.9.0",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
-    "babel-preset-expo": "~8.0.0"
+    "babel-preset-expo": "~9.5.1"
   },
   "private": true
 }
