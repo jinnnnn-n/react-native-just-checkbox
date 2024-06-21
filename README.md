@@ -1,4 +1,7 @@
-# react-native-just-checkbox
+
+> 📌 Below document is for v1. v2 version will be added soon
+
+# react-native-just-checkbox (v1)
 
 This is a simple React Native app built with expo which provides the preview page introduced in the npm package→['react-native-just-checkbox'](https://www.npmjs.com/package/react-native-just-checkbox). 'react-native-just-checkbox' is a CheckBox component for React Native where you can customize the size, the color, and the shape of a CheckBox component which supports both iOS and android.  
 
