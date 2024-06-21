@@ -1,28 +1,32 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "react-native-just-checkbox",
+  "version": "2.0.1",
+  "description": "CheckBox component for React Native\r   - customizable color & size & shape(circle/square)\r   - supports both iOS and android",
+  "main": "CheckBox.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jinnnnn-n/react-native-just-checkbox"
+  },
+  "keywords": [
+    "react-native",
+    "checkbox",
+    "ios",
+    "android",
+    "check",
+    "box",
+    "react-native-component",
+    "check-box"
+  ],
+  "author": "Jinyoung Joh <sounddribble@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "@types/react": "^18.3.3"
   },
   "dependencies": {
-    "expo": "~49.0.6",
-    "logkitty": "^0.7.1",
-    "mem": "^6.1.0",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-just-checkbox": "^1.0.12",
-    "react-native-web": "~0.11.7",
-    "yargs-parser": ">=13.1.2",
-    "node-fetch": ">=2.6.7",
-    "@hapi/hoek": ">=8.5.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "babel-preset-expo": "~9.5.1"
-  },
-  "private": true
+    "react-native": "^0.74.2"
+  }
 }
