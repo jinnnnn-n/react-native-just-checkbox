@@ -26,7 +26,7 @@
     "@types/node": "^20.14.7",
     "@types/react": "^18.3.3"
   },
-  "dependencies": {
-    "react-native": "^0.74.2"
+  "peerDependencies": {
+    "react-native": ">=0.63.0"
   }
 }
