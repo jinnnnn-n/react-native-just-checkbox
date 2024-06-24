@@ -32,4 +32,5 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
         run: |
           cd dist
-          npm publish --access public
+          npm version patch
+          npm publish
