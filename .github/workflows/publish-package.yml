@@ -1,0 +1,35 @@
+name: Publish on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  build-and-publish:
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Prepare assets
+        run: |
+          mkdir -p dist
+          cp path/to/assets/* dist/
+
+      - name: Copy TypeScript files
+        run: |
+          cp path/to/**/*.tsx dist/
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+        run: |
+          cd dist
+          npm publish --access public
