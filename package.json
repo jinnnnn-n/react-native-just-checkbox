@@ -1,6 +1,6 @@
 {
   "name": "react-native-just-checkbox",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "description": "CheckBox component for React Native\r   - customizable color & size & shape(circle/square)\r   - supports both iOS and android",
   "main": "src/index.tsx",
   "scripts": {
@@ -26,7 +26,7 @@
     "@types/node": "^20.14.7",
     "@types/react": "^18.3.3"
   },
-  "dependencies": {
-    "react-native": "^0.74.2"
+  "peerDependencies": {
+    "react-native": ">=0.63.0"
   }
 }
