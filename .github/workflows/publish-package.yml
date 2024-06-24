@@ -24,21 +24,20 @@ jobs:
           cp src/assets/* dist/assets/
 
       - name: Copy TypeScript file
-        run: |
-          cp src/index.tsx dist/
+        run: cp src/index.tsx dist/
 
-      - name: Navigate to dist directory
-        run: cd dist
+      - name: Copy package.json
+        run: cp package.json dist/
 
       - name: Configure Git
         run: |
           git config user.email "${{ secrets.GH_EMAIL }}"
           git config user.name "${{ secrets.GH_USERNAME }}"
 
-      - name: Update package version
-        run: npm version patch
-
       - name: Publish to npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-        run: npm publish
+        run: |
+          cd dist
+          npm version patch
+          npm publish
