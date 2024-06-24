@@ -30,6 +30,11 @@ jobs:
       - name: Navigate to dist directory
         run: cd dist
 
+      - name: Configure Git
+        run: |
+          git config user.email "${{ secrets.GH_EMAIL }}"
+          git config user.name "${{ secrets.GH_USERNAME }}"
+
       - name: Update package version
         run: npm version patch
 
