@@ -1,12 +1,12 @@
-name: Publish on PR Merge
+name: Publish on Push
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches:
+      - master
 
 jobs:
   build-and-publish:
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
     runs-on: ubuntu-latest
 
     steps:
@@ -21,11 +21,11 @@ jobs:
       - name: Prepare assets
         run: |
           mkdir -p dist
-          cp path/to/assets/* dist/
+          cp src/assets/* dist/assets/
 
       - name: Copy TypeScript files
         run: |
-          cp path/to/**/*.tsx dist/
+          cp src/index.tsx dist/
 
       - name: Publish to npm
         env:
