@@ -1,0 +1,36 @@
+name: Publish on Push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Prepare assets
+        run: |
+          mkdir -p dist
+          cp src/assets/* dist/assets/
+
+      - name: Copy TypeScript files
+        run: |
+          cp src/index.tsx dist/
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+        run: |
+          cd dist
+          npm version patch
+          npm publish
