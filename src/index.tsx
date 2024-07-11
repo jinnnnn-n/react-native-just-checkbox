@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Animated, Pressable, View } from "react-native";
 import { getCheckBoxStyles, handleAnimation } from "./utils";
-import { ANIMATION_TYPES, CheckBoxProps } from "./types";
+import { CheckBoxProps } from "./types";
 
 // Create an animated version of Pressable
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
