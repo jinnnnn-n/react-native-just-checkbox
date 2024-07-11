@@ -1,31 +1,73 @@
+![screenshot](https://imgur.com/8ydX1ES.png)
 
-> 📌 Below document is for v1. v2 version will be added soon
+# react-native-just-checkbox (v2)
 
-# react-native-just-checkbox (v1)
+react-native-just-checkbox is a customizable checkbox component for React Native and Expo, offering a variety of configuration options to suit your app's needs.
 
-This is a simple React Native app built with expo which provides the preview page introduced in the npm package→['react-native-just-checkbox'](https://www.npmjs.com/package/react-native-just-checkbox). 'react-native-just-checkbox' is a CheckBox component for React Native where you can customize the size, the color, and the shape of a CheckBox component which supports both iOS and android.  
+##### Key features
 
-If you want to use the npm  package in your own project, please visit ['here(npm package link)'](https://www.npmjs.com/package/react-native-just-checkbox) for installation and guides.
+- Customizable size and color.
 
-## Quick start
+- Animation options.
+
+- Fill mode for different platforms.
+
+> 📌 [Migration Guide from v1 to v2](https://jinyoungjoh.gitbook.io/react-native-just-checkbox/migration-guide-v1-to-v2)
+
+## Getting Started
+
+### Installation
+
+First, install the package:
+
 ```
-$ git clone https://github.com/jinnnnn-n/react-native-just-checkbox
-$ cd react-native-just-checkbox
-$ npm install # or yarn install
-$ expo start # or yarn start
+$ npm install react-native-just-checkbox
 ```
- ## Preview
- ![screenshot](https://i.imgur.com/ZI1esd1.png)
- 
+
+### Quick Start
+
+```javascript
+import React, { useState } from 'react';
+import { StyleSheet, Text, View } from "react-native";
+import { CheckBox } 'react-native-just-checkbox';
+
+export default function App() {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <View style={styles.container}>
+      <CheckBox isChecked={isChecked} onPress={() => setIsChecked(!isChecked)} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fefefe",
+    justifyContent: "center",
+    paddingHorizontal: 50,
+  }
+});
+
+```
+
 ### Props
-  
-| PROPS | DESCRIPTION |TYPE |
-| ------ | ------ |-----|
-|isChecked|initial state of the checkbox, DEFAULT: false | bool|
-|checkBoxSize|size of the checkbox, DEFAULT: 30|number|
-|checkColor|color of the checkbox, follows ['React Native Named  colors'](https://facebook.github.io/react-native/docs/colors#named-colors "react-native"),   DEFAULT: 'navy' |string|
-|squareCheckBox| By default, we provide a circle-checkbox. By settting this props to true change the shape of the checkbox to square. No props are needed for the circle-checkbox.  |bool|
-|onToggle|function which is invoked when the checkbox is clicked|function|
 
-### 
+| Prop          | Type                            | Description                                                                                                                      | Default |
+| ------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| isChecked     | boolean                         | Whether the checkbox is checked or not.                                                                                          | -       |
+| isDisabled    | boolean                         | Whether the checkbox is disabled or not. Disabled checkboxes will not trigger touch events and their opacity will be set to 0.2. | false   |
+| checkBoxSize  | number                          | The size of the checkbox (applied to both width and height).                                                                     | 20      |
+| checkColor    | string                          | The color of the checkmark.                                                                                                      | #1a1a1a |
+| animationType | "bounce" \| "opacity" \| "none" | The animation type for the checkbox.                                                                                             | "none"  |
+| fillMode      | boolean                         | Whether to fill the background of the CheckBox.                                                                                  | false   |
+| fillColor     | string                          | The background fill color of the CheckBox.                                                                                       | -       |
+| borderWidth   | number                          | The border width of the CheckBox.                                                                                                | 1.5     |
+| borderRadius  | number                          | The border radius of the CheckBox.                                                                                               | 3       |
+| onPress       | () => void                      | Function called when the checkbox is pressed.                                                                                    | -       |
 
+## Additional
+
+- [Basic/Advanced Usage Examples](https://jinyoungjoh.gitbook.io/react-native-just-checkbox/examples)
+- [Detailed Change Log from v1 to v2](https://jinyoungjoh.gitbook.io/react-native-just-checkbox/change-log)

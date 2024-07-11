@@ -1,6 +1,6 @@
 {
   "name": "react-native-just-checkbox",
-  "version": "2.0.8",
+  "version": "2.0.10",
   "description": "CheckBox component for React Native\r   - customizable color & size & shape(circle/square)\r   - supports both iOS and android",
   "main": "src/index.tsx",
   "scripts": {
@@ -20,7 +20,7 @@
     "react-native-component",
     "check-box"
   ],
-  "author": "Jinyoung Joh <sounddribble@gmail.com>",
+  "author": "Jinyoung Joh <jinyoungjoh7@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.14.7",
