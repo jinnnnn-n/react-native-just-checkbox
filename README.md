@@ -2,15 +2,14 @@
 
 # react-native-just-checkbox (v2)
 
-react-native-just-checkbox is a customizable checkbox component for React Native and Expo, offering a variety of configuration options to suit your app's needs.
+react-native-just-checkbox is a customizable checkbox component for React Native, offering a variety of configuration options to suit your app's needs.
 
 ##### Key features
 
 - Customizable size and color.
-
 - Animation options.
-
 - Fill mode for different platforms.
+  
 
 > 📌 [Migration Guide from v1 to v2](https://jinyoungjoh.gitbook.io/react-native-just-checkbox/migration-guide-v1-to-v2)
 
