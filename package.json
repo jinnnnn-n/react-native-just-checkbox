@@ -20,7 +20,7 @@
     "react-native-component",
     "check-box"
   ],
-  "author": "Jinyoung Joh <sounddribble@gmail.com>",
+  "author": "Jinyoung Joh <jinyoungjoh7@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.14.7",
