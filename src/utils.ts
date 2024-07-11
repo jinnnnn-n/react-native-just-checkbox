@@ -16,7 +16,7 @@ import {
  */
 export const handleAnimation = (
   animRef: Animated.Value,
-  animationType: ANIMATION_TYPE,
+  animationType: ANIMATION_TYPE = ANIMATION_TYPES.NONE,
   pressType: PRESS_TYPE
 ): void => {
   if (animationType !== ANIMATION_TYPES.NONE) {
@@ -119,7 +119,7 @@ export const getCheckBoxStyles = (
     borderLeftWidth: borderWidth,
     borderBottomWidth: borderWidth,
     transform: [{ rotate: "-45deg" }, { translateY: -1 }, { translateX: 0.5 }],
-  };
+  } as ViewStyle;
 
   return { containerStyle, checkMarkStyle };
 };

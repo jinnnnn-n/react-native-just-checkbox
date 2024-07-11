@@ -9,7 +9,6 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 export const CheckBox = ({
   isChecked,
   isDisabled = false,
-  animationType = ANIMATION_TYPES.NONE,
   onPress,
   ...styleProps
 }: CheckBoxProps) => {
@@ -24,8 +23,12 @@ export const CheckBox = ({
       onPress={onPress}
       disabled={isDisabled}
       style={[containerStyle, isDisabled && { opacity: 0.2 }]}
-      onPressIn={() => handleAnimation(animRef, animationType, "PRESS_IN")}
-      onPressOut={() => handleAnimation(animRef, animationType, "PRESS_OUT")}
+      onPressIn={() =>
+        handleAnimation(animRef, styleProps.animationType, "PRESS_IN")
+      }
+      onPressOut={() =>
+        handleAnimation(animRef, styleProps.animationType, "PRESS_OUT")
+      }
       hitSlop={8}
     >
       {isChecked && <View style={checkMarkStyle} />}
