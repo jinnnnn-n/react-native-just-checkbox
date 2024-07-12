@@ -109,7 +109,7 @@ export const getCheckBoxStyles = (
     borderRadius: borderRadius > -1 ? borderRadius : checkBoxSize,
     backgroundColor: _fillColor,
     ...getAnimationStyle(animationType, animRef),
-  } as const;
+  } as ViewStyle;
 
   // Check mark style within the CheckBox
   const checkMarkStyle = {
