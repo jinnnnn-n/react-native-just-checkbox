@@ -18,7 +18,6 @@ const SCALE_ANIMATION_CONFIG: {
   },
   PRESS_OUT: {
     toValue: 1,
-    // easing: Easing.in(Easing.bounce),
     duration: 100,
     useNativeDriver: true,
   },
