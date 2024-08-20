@@ -1,4 +1,4 @@
-![screenshot](https://imgur.com/8ydX1ES.png)
+![screenshot](https://i.imgur.com/8ydX1ES.png)
 
 # react-native-just-checkbox (v2)
 
